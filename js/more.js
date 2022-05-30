@@ -6,7 +6,24 @@ back.onclick = () => {
 
 loadMorePage();
 
-async function loadMorePage() {
+function loadMorePage() {
+  loadShirt();
+
+  loadTeamCompetition();
+
+  loadCountry();
+
+}
+
+function inputContentByCheckMiddleName(ptag, cyclist, data) {
+  if (cyclist.middleName != null) {
+    ptag.textContent = cyclist.firstName + ' ' + cyclist.middleName + ' ' + cyclist.lastName + ' ' + data;
+  } else {
+    ptag.textContent = cyclist.firstName + ' ' + cyclist.lastName + ' ' + data;
+  }
+}
+
+async function loadShirt() {
   const yellowPtag = document.querySelector('#yellow');
   const mountainPtag = document.querySelector('#mountain');
   const greenPtag = document.querySelector('#green');
@@ -29,11 +46,14 @@ async function loadMorePage() {
   inputContentByCheckMiddleName(whitePtag, ageCyclist, ageCyclist.totalTime);
 }
 
-function inputContentByCheckMiddleName(ptag, cyclist, data) {
-  if (cyclist.middleName != null) {
-    ptag.textContent = cyclist.firstName + ' ' + cyclist.middleName + ' ' + cyclist.lastName + ' ' + data;
-  } else {
-    ptag.textContent = cyclist.firstName + ' ' + cyclist.lastName + ' ' + data;
-  }
+async function loadTeamCompetition() {
+
+  // get list of teams who have the five best players
+  // insert team names into div as p tags
+}
+
+async function loadCountry() {
+  // get list of countries who are doing best and insert in div
+
 }
 
