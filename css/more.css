@@ -1,0 +1,24 @@
+#extraInfo {
+  text-align: center;
+  grid-column: 2/3;
+}
+
+#extraInfo label {
+  font-weight: bold;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+
+#shirt {
+  border-spacing: 30px 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  padding: 10px;
+  margin-bottom: 35px;
+}
+
+#back {
+  grid-column: 1/2;
+}
