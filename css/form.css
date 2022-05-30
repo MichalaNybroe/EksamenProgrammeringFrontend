@@ -1,0 +1,90 @@
+.form {
+  display: grid;
+  grid-template-columns: 10% 10% 25% 10% 10% 25% 10%;
+  row-gap: 10px;
+  grid-template-rows: auto;
+}
+
+.firstNameDiv {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.middleNameDiv {
+  grid-column: 5/7;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.lastNameDiv {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.ageDiv {
+  grid-column: 5/7;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.nationalityDiv {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.timeDiv {
+  grid-column: 5/7;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+}
+
+.timeDiv input:hover {
+  cursor: pointer;
+  border-color: rgba(47, 107, 45, .9);
+}
+
+.mountainDiv {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.spurtDiv {
+  grid-column: 5/7;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.teamDiv {
+  grid-column: 2/4;
+  grid-row: 5/6;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.submit {
+  grid-column: 5/7;
+  grid-row: 6/7;
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.submit input {
+  grid-column: 4/5;
+}
+
+.form label {
+  font-weight: initial;
+}

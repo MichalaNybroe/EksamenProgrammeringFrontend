@@ -1,0 +1,14 @@
+#updateCyclistForm {
+  border-style: ridge;
+  padding: 25px;
+  box-shadow: 2px 2px #5a916b;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+#cancel {
+  margin-top: 50px;
+}
+

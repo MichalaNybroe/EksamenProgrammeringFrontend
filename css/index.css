@@ -1,0 +1,82 @@
+#create {
+  margin-bottom: 50px;
+}
+
+#messageDiv {
+  text-align: center;
+}
+
+#message {
+  color: rgba(47, 107, 45, .9);
+  font-size: 20px;
+  box-shadow: 0 0 5px;
+  border-radius: 2px;
+  border-color: #888888;
+  display: inline-flex;
+  padding: 2px 5px;
+}
+
+#displayChoices {
+  display: grid;
+  grid-template-columns: 5% 10% 5% 30% 5% 40% 5%;
+  grid-template-rows: auto;
+  row-gap: 10px;
+}
+
+#showAllCyclists {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#showAllCyclistsByTeam {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+#showAllCyclistsByTime {
+  grid-column: 6/7;
+  grid-row: 1/2;
+}
+
+#specialSearch {
+  border-top: dotted;
+  grid-column: 2/7;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 20% 30% 5% 45%;
+  padding-top: 10px;
+}
+
+#displayAllCyclistsByTeamForm {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 70% 5% 25%;
+  grid-template-rows: auto;
+}
+
+#displayAllCyclistsByTeamForm input {
+  grid-column: 3/4;
+}
+
+#displayTable {
+  margin-top: 60px;
+}
+
+#table {
+  margin-right: auto;
+  margin-left: auto;
+  border-spacing: 30px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 10px;
+}
+
+#table th {
+  font-weight: bold;
+}
+
+.deleteButton:hover {
+  color: rgba(119, 45, 45, 0.9);
+  box-shadow: 0 0 0 2px rgba(119, 45, 45, 0.9);
+  background-color: white;
+}

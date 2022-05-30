@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tour De France 2022</title>
+  <link rel="stylesheet" href="/css/generic.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+<div id="content">
+  <h2>Tour De France 2022</h2>
+
+  <div id="create">
+    <h3>Registrer Cykelrytter</h3>
+    <form id="createCyclistForm" class="form">
+
+      <div class="firstNameDiv">
+        <label for="firstName">Fornavn</label>
+        <input type="text" id="firstName" required>
+      </div>
+
+      <div class="middleNameDiv">
+        <label for="middleName">Mellemnavn</label>
+        <input type="text" id="middleName">
+      </div>
+
+      <div class="lastNameDiv">
+        <label for="lastName">Efternavn</label>
+        <input type="text" id="lastName" required>
+      </div>
+
+      <div class="ageDiv">
+        <label for="age">Alder</label>
+        <input type="number" id="age" required>
+      </div>
+
+      <div class="nationalityDiv">
+        <label for="nationality">Nationalitet</label>
+        <input type="text" id="nationality" required>
+      </div>
+
+      <div class="timeDiv">
+        <label for="time">Samlet tid</label>
+        <input type="time" id="time" required step="1">
+      </div>
+
+      <div class="mountainDiv">
+        <label for="mountainP">Bjergpoint</label>
+        <input type="number" id="mountainP">
+      </div>
+
+      <div class="spurtDiv">
+        <label for="spurtP">Spurtpoint</label>
+        <input type="number" id="spurtP">
+      </div>
+
+      <div class="teamDiv">
+        <label for="teamCreate">Hold</label>
+        <select id="teamCreate"></select>
+      </div>
+
+      <div class="submit">
+        <input type="submit" value="Registrer" class="subbut button">
+      </div>
+    </form>
+
+
+    <div id="messageDiv" hidden>
+      <p id="message">Cykelrytter er nu oprettet</p>
+    </div>
+  </div>
+
+  <div id="display">
+    <h3>Cykelryttere</h3>
+    <div id="displayChoices">
+      <button type="button" id="showAllCyclists" class="button">Vis alle</button>
+      <button type="button" id="showAllCyclistsByTeam" class="button">Vis alle sorteret på hold</button>
+      <button type="button" id="showAllCyclistsByTime" class="button">Vis alle sorteret efter tid</button>
+
+      <div id="specialSearch">
+        <label for="displayAllCyclistsByTeamForm">Vis cykelryttere fra: </label>
+        <form id="displayAllCyclistsByTeamForm">
+          <select id="cyclistsByTeamInput"></select>
+          <input type="submit" value="Vis" class="button">
+        </form>
+      </div>
+    </div>
+
+    <div id="displayTable">
+      <table id="table"></table>
+    </div>
+  </div>
+
+  
+</div>
+<script src="/js/fetch.js"></script>
+<script src="/js/filldropdown.js"></script>
+<script src="/js/tableparts.js"></script>
+<script src="/js/display.js"></script>
+<script src="/js/loadindex.js"></script>
+<script src="/js/create.js"></script>
+</body>
+</html>

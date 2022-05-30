@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Opdater</title>
+  <link rel="stylesheet" href="/css/generic.css">
+  <link rel="stylesheet" href="/css/form.css">
+  <link rel="stylesheet" href="/css/update.css">
+</head>
+<body>
+<div id="content">
+  <h3>Opdater</h3>
+
+  <form id="updateCyclistForm" class="form">
+    <div class="firstNameDiv">
+      <label for="firstName">Fornavn</label>
+      <input type="text" id="firstName" required>
+    </div>
+
+    <div class="middleNameDiv">
+      <label for="middleName">Mellemnavn</label>
+      <input type="text" id="middleName">
+    </div>
+
+    <div class="lastNameDiv">
+      <label for="lastName">Efternavn</label>
+      <input type="text" id="lastName" required>
+    </div>
+
+    <div class="ageDiv">
+      <label for="age">Alder</label>
+      <input type="number" id="age" required>
+    </div>
+
+    <div class="nationalityDiv">
+      <label for="nationality">Nationalitet</label>
+      <input type="text" id="nationality" required>
+    </div>
+
+    <div class="timeDiv">
+      <label for="time">Samlet tid</label>
+      <input type="time" id="time" required step="1">
+    </div>
+
+    <div class="mountainDiv">
+      <label for="mountainP">Bjergpoint</label>
+      <input type="number" id="mountainP">
+    </div>
+
+    <div class="spurtDiv">
+      <label for="spurtP">Spurtpoint</label>
+      <input type="number" id="spurtP">
+    </div>
+
+    <div class="teamDiv">
+      <label for="teamUpdate">Hold</label>
+      <select id="teamUpdate"></select>
+    </div>
+
+    <div class="submit">
+      <input type="submit" value="Opdater" class="subbut button">
+    </div>
+
+  </form>
+
+  <button type="button" id="cancel" class="button">Tilbage</button>
+
+
+</div>
+<script src="/js/fetch.js"></script>
+<script src="/js/filldropdown.js"></script>
+<script src="/js/update.js"></script>
+</body>
+</html>
