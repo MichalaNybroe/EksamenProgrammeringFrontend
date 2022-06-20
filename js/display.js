@@ -1,10 +1,10 @@
 const showAll = document.querySelector('#showAllCyclists');
-const showAllUrl = 'http://localhost:8080/cyclist';
+const showAllUrl = 'https://eksamenbackend.azurewebsites.net/cyclist';
 const showByTeam = document.querySelector('#showAllCyclistsByTeam');
-const showByTeamUrl = 'http://localhost:8080/cyclist?sort=team';
+const showByTeamUrl = 'https://eksamenbackend.azurewebsites.net/cyclist?sort=team';
 const showTeamForm = document.querySelector('#displayAllCyclistsByTeamForm');
 const showByTime = document.querySelector('#showAllCyclistsByTime');
-const showByTimeUrl = 'http://localhost:8080/cyclist?sort=time';
+const showByTimeUrl = 'https://eksamenbackend.azurewebsites.net/cyclist?sort=time';
 
 const table = document.querySelector('#table')
 
@@ -33,7 +33,7 @@ async function displayByTeam(event) {
   const teamId = cyclistsByTeamDD.options[cyclistsByTeamDD.selectedIndex].value;
   const team = teamMap.get(parseInt(teamId));
 
-  const cyclists = await getFetch('http://localhost:8080/cyclingTeam/' + team.name + '/cyclist')
+  const cyclists = await getFetch('https://eksamenbackend.azurewebsites.net/cyclingTeam/' + team.name + '/cyclist')
 
   await fillCyclistTable(cyclists);
 }

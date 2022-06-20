@@ -104,5 +104,5 @@ function createButton(value, cssClass) {
 }
 
 async function deleteElement(cyclist) {
-  await deleteFetch("http://localhost:8080/cyclist/" + cyclist.id);
+  await deleteFetch("https://eksamenbackend.azurewebsites.net/cyclist/" + cyclist.id);
 }

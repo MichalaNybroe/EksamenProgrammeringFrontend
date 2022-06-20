@@ -1,4 +1,4 @@
-const createUrl = 'http://localhost:8080/cyclist';
+const createUrl = 'https://eksamenbackend.azurewebsites.net/cyclist';
 
 const firstnameCreate = document.querySelector('#firstName');
 const middlenameCreate = document.querySelector('#middleName');

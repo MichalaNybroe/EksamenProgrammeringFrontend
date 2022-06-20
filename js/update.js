@@ -25,7 +25,7 @@ cancel.onclick = () => {
 async function fillUpdateWithCyclist() {
   await getTeams(teamsDD);
 
-  const cyclist = await getFetch('http://localhost:8080/cyclist/' + getUrlId());
+  const cyclist = await getFetch('https://eksamenbackend.azurewebsites.net/cyclist/' + getUrlId());
 
   // Input value
   firstnameUpdate.value = cyclist.firstName;
@@ -53,7 +53,7 @@ async function sendUpdate(event) {
     spurtPoints: spurtUpdate.value,
     cyclingTeam: {id: teamUpdateDropdown.options[teamUpdateDropdown.selectedIndex].value}
   }
-  await postPutFetch('PUT', 'http://localhost:8080/cyclist/' + getUrlId(), body);
+  await postPutFetch('PUT', 'https://eksamenbackend.azurewebsites.net/cyclist/' + getUrlId(), body);
 
   window.location.href = '../index.html';
 }

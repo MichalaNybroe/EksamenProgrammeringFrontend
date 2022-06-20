@@ -1,7 +1,7 @@
 const teamMap = new Map();
 
 async function getTeams(dropdown) {
-  const teams = await getFetch("http://localhost:8080/cyclingTeam");
+  const teams = await getFetch("https://eksamenbackend.azurewebsites.net/cyclingTeam");
 
   teams.forEach(team => {
     teamMap.set(team.id, team);
